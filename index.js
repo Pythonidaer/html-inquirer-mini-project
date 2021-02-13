@@ -37,16 +37,20 @@ inquirer
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <title>Bio</title>
     </head>
     <body>
-        <section>
-            <h1>Mini Project</h1>
-            <p id="name">Name: ${answers.userName}</p>
-            <p id="location">Location: ${answers.location}</p>
-            <p id="bio">Bio: ${answers.bio}</p>
-            <p id="linkedin">Linkedin URL: ${answers.linkedinURL}</p>
-            <p id="github">GitHub URL: ${answers.githubURL}</p>
+        <section class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 id="name" class="display-4">Name: ${answers.userName}</h1>
+                <p id="location" class="lead">Location: ${answers.location}</p>
+                <p id="bio" class="lead">Bio: ${answers.bio}</p>
+                <ul class="list-group">
+                    <li class="list-group-item">GitHub URL: ${answers.githubURL}</li>
+                    <li class="list-group-item">Linkedin URL: ${answers.linkedinURL}</li>
+                </ul>
+            </div>
         </section>
     </body>
 </html>
